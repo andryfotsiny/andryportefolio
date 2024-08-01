@@ -31,7 +31,7 @@ const projects = [
         category: 'Conception et réalisation d’une application de Gestion de congé, d’absence et d’ordre de mission',
         date: 'mai 2021(3 mois) ',
         description: 'lorem',
-        stack: [{ name: "Java " }, { name: "." }, { name: "javascript" }],
+        stack: [{ name: "Java " }, { name: "N/A" }, { name: "javascript" }],
         image: conge,
         live: "",
         github: "",

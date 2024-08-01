@@ -16,7 +16,7 @@ interface LinkItem {
 }
 
 const links: LinkItem[] = [
-  { name: "home", path: "/", icon: <FaHome /> },
+ { name: "home", path: "/andryportefolio", icon: <FaHome /> },
   { name: "formation", path: "/formation", icon: <FaBook /> },
   { name: "expérience", path: "/experience", icon: <FaBriefcase /> },
   { name: "projetPersonnel", path: "/projetPersonnel", icon: <FaProjectDiagram /> },
@@ -60,7 +60,7 @@ const MobileNav: React.FC = () => {
                             onClick={handleLinkClick} // Close the sheet when a link is clicked
                             className={`${
                                 link.path === location.pathname &&
-                                "text-accent border-b-2 border-accent"
+                                "text-accent  border-accent"
                             } text-xl capitalize hover:text-accent transition-all flex items-center gap-2`}
                         >
                             {link.icon}

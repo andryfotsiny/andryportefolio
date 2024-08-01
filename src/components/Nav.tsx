@@ -11,7 +11,7 @@ interface LinkItem {
 }
 
 const links: LinkItem[] = [
-  { name: "home", path: "/", icon: <FaHome /> },
+  { name: "home", path: "/andryportefolio", icon: <FaHome /> },
   { name: "formation", path: "/formation", icon: <FaBook /> },
   { name: "expérience", path: "/experience", icon: <FaBriefcase /> },
   { name: "projetPersonnel", path: "/projetPersonnel", icon: <FaProjectDiagram /> },

@@ -84,15 +84,18 @@ body.dark {
 }
 
 .btn-download-light {
-  @apply bg-accent text-white;
+  @apply  text-accent;
 }
 
 .btn-download-light:hover {
-  background-color: #282c34; /* Couleur de survol pour le mode clair */
+  background-color: #ffffff;
+}
+.btn-download-dark:hover {
+  background-color: black;
 }
 
 .btn-download-dark {
-  @apply bg-accent text-white;
+  @apply  text-white;
 }
 
 body.dark .btn-download-dark:hover {

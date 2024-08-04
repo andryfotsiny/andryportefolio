@@ -32,7 +32,7 @@ const Home = () => {
           <div><Photo /></div>
           <div>
             <div className="color-change">
-              <div className="h1">Développeur Web Full-stack</div>
+              <div className="h1">Développeur s Web Full-stack</div>
             </div>
             <h1 className="text-3xl p-4">
               je me nomme<span className="text-accent"> ANDRINANTENAINA jean michel</span>
@@ -51,13 +51,13 @@ const Home = () => {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-5">
               <button
-                className={`btn-download ${darkMode ? 'btn-download-dark' : 'btn-download-light'}`}
+                className={`btn-download outline  ${darkMode ? 'btn-download-dark' : 'btn-download-light'} `}
                 onClick={handleDownload}
               >
                 <span>Télécharger CV</span>
                 <FiDownload className="text-2xl" />
               </button>
-              <div className="mb-8 xl:mb-0 relative">social</div>
+
               <Social
                 containerStyles="flex gap-6"
                 iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"

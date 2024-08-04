@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         <header className="p-5">
             <div className="p-2 flex justify-between items-center">
                 <Link to="/">
-                    <h1 className="text-4xl font-semibold">Logo</h1>
+                    <h1 className="text-4xl font-semibold">Logo.</h1>
                 </Link>
                 <div className="hidden md:flex items-center gap-8">
                     <Nav />

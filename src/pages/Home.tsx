@@ -32,7 +32,7 @@ const Home = () => {
           <div><Photo /></div>
           <div>
             <div className="color-change">
-              <div className="h1">Développeur s Web Full-stack</div>
+              <div className="h1">Développeur  Web Full-stack</div>
             </div>
             <h1 className="text-3xl p-4">
               je me nomme<span className="text-accent"> ANDRINANTENAINA jean michel</span>

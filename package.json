@@ -2,7 +2,7 @@
   "name": "andryportefolio",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://andryfotsiny.github.io/andryportefolio",
+   "homepage": "https://andryfotsiny.github.io/portefolioandry",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-scroll-area": "^1.1.0",

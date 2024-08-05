@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
   }, []);
 
   const handleAddCompany = async () => {
-    const { data, error } = await supabase
+    const {  error } = await supabase
       .from('companie')
       .insert([
         { name: companyName, email: companyEmail, language: selectedOptions.join(', '), description: companyDescription }
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
   };
 
   const handleEditCompany = async (id: number) => {
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('companie')
       .update({ name: companyName, email: companyEmail, language: selectedOptions.join(', '), description: companyDescription })
       .eq('id', id);
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
 
   const handleDeleteCompany = async (id: number) => {
     if (window.confirm('Êtes-vous sûr de vouloir supprimer cette entreprise?')) {
-      const { data, error } = await supabase
+      const {  error } = await supabase
         .from('companie')
         .delete()
         .eq('id', id);

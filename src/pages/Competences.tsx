@@ -6,11 +6,7 @@ import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb } from "react-ic
 
 import { motion } from "framer-motion";
 
-interface Skill {
-  icon: JSX.Element;
-  name: string;
-  stars: number;
-}
+
 
 const skills = {
   title: 'Compétence',

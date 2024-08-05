@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
 
     if (error) {
       console.error('Error updating company:', error);
-      setAlert({ message: 'Erreur lors de la modification de l\'entreprise!', type: 'error' });
+      setAlert({ message: 'Erreur lors de la modification ', type: 'error' });
     } else {
       setAlert({ message: 'Entreprise modifiée avec succès!', type: 'success' });
       fetchCompanies();

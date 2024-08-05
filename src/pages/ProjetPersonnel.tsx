@@ -1,6 +1,5 @@
 "use client";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+
 import { motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/Tabs";
 import { ScrollArea} from "../components/ui/Scroll-area";

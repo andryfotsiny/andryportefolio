@@ -20,7 +20,7 @@ const links: LinkItem[] = [
 ];
 
 const Nav: React.FC = () => {
-  const { pathname } = useLocation();
+
 
   return (
     <nav className="flex gap-8">

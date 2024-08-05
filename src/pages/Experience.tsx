@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import SwiperCore, { Swiper as SwiperType } from 'swiper';
+import  { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import chuImage from '../assets/chu1.png';
@@ -13,7 +13,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import { Link } from 'react-router-dom';
 import WorkSliderBtns from "../components/ui/WorkSliderBtns";
-import assert from "node:assert";
+
 
 const projects = [
     {

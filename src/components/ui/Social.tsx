@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Use this if you need routing, otherwise use <a> for external links
 
 interface SocialProps {
   containerStyles?: string;

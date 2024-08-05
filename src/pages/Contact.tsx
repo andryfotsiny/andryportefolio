@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
   const [companies, setCompanies] = useState<any[]>([]);
   const [companyName, setCompanyName] = useState<string>('');
   const [companyEmail, setCompanyEmail] = useState<string>('');
-  const [companyLanguage, setCompanyLanguage] = useState<string>('');
+
   const [companyDescription, setCompanyDescription] = useState<string>('');
   const [editingCompanyId, setEditingCompanyId] = useState<number | null>(null);
   const [alert, setAlert] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
       fetchCompanies();
       setCompanyName('');
       setCompanyEmail('');
-      setCompanyLanguage('');
+
       setCompanyDescription('');
       setSelectedOptions([]);
     }
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
       fetchCompanies();
       setCompanyName('');
       setCompanyEmail('');
-      setCompanyLanguage('');
+
       setCompanyDescription('');
       setSelectedOptions([]);
       setEditingCompanyId(null);

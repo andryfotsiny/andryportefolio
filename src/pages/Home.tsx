@@ -19,7 +19,7 @@ const link = document.createElement('a');
 };
 
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode] = useState(false);
 
   useEffect(() => {
     document.body.classList.toggle('dark', darkMode);

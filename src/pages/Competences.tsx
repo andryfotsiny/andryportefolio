@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/Tabs";
+import { Tabs} from "../components/ui/Tabs";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp, FaPython, FaJava, FaNodeJs } from "react-icons/fa";
 import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb } from "react-icons/si";
 

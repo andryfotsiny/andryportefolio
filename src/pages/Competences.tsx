@@ -1,9 +1,8 @@
 "use client"
 
-import { Tabs} from "../components/ui/Tabs";
+import { Tabs } from "../components/ui/Tabs";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp, FaPython, FaJava, FaNodeJs } from "react-icons/fa";
 import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb } from "react-icons/si";
-
 import { motion } from "framer-motion";
 
 interface Skill {
@@ -50,7 +49,6 @@ const Competences: React.FC = () => {
       <div className="p-5">
         <Tabs className="flex flex-col xl:flex-row gap-[60px]">
           <div className="min-h-[70vh] w-full">
-
             <div className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[10px] text-center xl:text-left">
@@ -60,7 +58,7 @@ const Competences: React.FC = () => {
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill, index) => (
                     <li key={skill.name}> {/* Utilisation de `skill.name` comme clé unique */}
-                      <div className="w-full h-[100px] dark:bg-gray-800 bg-white  rounded-xl flex flex-col justify-center items-center group">
+                      <div className="w-full h-[100px] dark:bg-gray-800 bg-white rounded-xl flex flex-col justify-center items-center group">
                         <div className="text-4xl group-hover:text-accent">
                           {skill.icon}
                         </div>

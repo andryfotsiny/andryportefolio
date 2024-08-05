@@ -13,7 +13,7 @@ const Photo: React.FC = () => {
           animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" } }}
           className="w-[208px] h-[208px] xl:w-[498px] xl:h-[408px]"
         >
-          <img src={photo} alt="Photo" className="object-contain xl:items-center w-full h-full"/>
+          <img src={photo} alt="" className="object-contain xl:items-center w-full h-full"/>
         </motion.div>
       </motion.div>
     </div>

@@ -35,7 +35,7 @@ const Home = () => {
               <div className="h1">Développeur  Web Full-stack</div>
             </div>
             <h1 className="text-3xl p-4">
-              je me nomme<span className="text-accent"> ANDRINANTENAINA jean michel</span>
+              je me nomme<span className="text-accent"> ANDRINANTENAINA Jean Michel</span>
             </h1>
             <p className="max-w-[850px] mb-9 text-justify">
               Je suis un passionné des technologies de l'information et

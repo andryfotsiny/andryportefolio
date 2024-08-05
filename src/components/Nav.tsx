@@ -1,6 +1,6 @@
 // src/components/Nav.tsx
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaHome, FaBook, FaBriefcase, FaProjectDiagram, FaStar, FaEnvelope } from 'react-icons/fa';
 import '../styles/global.css';
 

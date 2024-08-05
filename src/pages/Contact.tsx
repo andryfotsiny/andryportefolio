@@ -18,10 +18,9 @@ const Contact: React.FC = () => {
   const [companies, setCompanies] = useState<any[]>([]);
   const [companyName, setCompanyName] = useState<string>('');
   const [companyEmail, setCompanyEmail] = useState<string>('');
-
   const [companyDescription, setCompanyDescription] = useState<string>('');
   const [editingCompanyId, setEditingCompanyId] = useState<number | null>(null);
-  const [alert, setAlert] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+  const [alert, setAlert] = useState<{ message: string; type: 'success' | 'error'; } | null>(null);
 
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
@@ -61,7 +60,6 @@ const Contact: React.FC = () => {
       fetchCompanies();
       setCompanyName('');
       setCompanyEmail('');
-
       setCompanyDescription('');
       setSelectedOptions([]);
     }
@@ -75,13 +73,12 @@ const Contact: React.FC = () => {
 
     if (error) {
       console.error('Error updating company:', error);
-      setAlert({ message: 'Erreur lors de la modification ', type: 'error' });
+      setAlert({ message: 'Erreur lors de la modification', type: 'error' });
     } else {
       setAlert({ message: 'Entreprise modifiée avec succès!', type: 'success' });
       fetchCompanies();
       setCompanyName('');
       setCompanyEmail('');
-
       setCompanyDescription('');
       setSelectedOptions([]);
       setEditingCompanyId(null);
@@ -176,7 +173,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="w-full overflow-x-auto">
             <p className="text-xl font-semibold mb-2">Tableau</p>
-            <p className="mb-4">Liste des entreprises qui me contactent </p>
+            <p className="mb-4">Liste des entreprises qui me contactent</p>
             <table className=" bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
               <thead>
                 <tr className=" dark:bg-gray-900">
@@ -220,16 +217,16 @@ const Contact: React.FC = () => {
             </table>
           </div>
         </div>
+        <AnimatePresence>
+          {alert && (
+            <Alert
+              message={alert.message}
+              type={alert.type}
+              onClose={() => setAlert(null)}
+            />
+          )}
+        </AnimatePresence>
       </div>
-      <AnimatePresence>
-        {alert && (
-          <Alert
-            message={alert.message}
-            type={alert.type}
-            onClose={() => setAlert(null)}
-          />
-        )}
-      </AnimatePresence>
     </motion.section>
   );
 };

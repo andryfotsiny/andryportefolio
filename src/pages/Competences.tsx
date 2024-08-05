@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import { Tabs } from "../components/ui/Tabs";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp, FaPython, FaJava, FaNodeJs } from "react-icons/fa";
 import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb } from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 interface Skill {
@@ -37,7 +38,7 @@ const skills = {
     { icon: <SiBlender />, name: 'Blender', stars: 3 },
     { icon: <SiMongodb />, name: 'MongoDB', stars: 3 },
   ]
-}
+};
 
 const Competences: React.FC = () => {
   return (
@@ -56,7 +57,7 @@ const Competences: React.FC = () => {
                   <p className="mx-auto xl:mx-0">{skills.description}</p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill, index) => (
+                  {skills.skillList.map((skill) => (
                     <li key={skill.name}> {/* Utilisation de `skill.name` comme clé unique */}
                       <div className="w-full h-[100px] dark:bg-gray-800 bg-white rounded-xl flex flex-col justify-center items-center group">
                         <div className="text-4xl group-hover:text-accent">
@@ -81,7 +82,7 @@ const Competences: React.FC = () => {
         </Tabs>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
 export default Competences;

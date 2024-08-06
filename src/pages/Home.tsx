@@ -35,7 +35,7 @@ const Home = () => {
               <div className="h1">Développeur  Web Full-stack</div>
             </div>
             <h1 className="text-3xl p-4">
-              je me nomme<span className="text-accent"> ANDRINANTENAINA Jean Michel</span>
+              Je me nomme<span className="text-accent"> ANDRINANTENAINA Jean Michel</span>
             </h1>
             <p className="max-w-[850px] mb-9 text-justify">
               Je suis un passionné des technologies de l'information et
@@ -57,7 +57,6 @@ const Home = () => {
                 <span>Télécharger CV</span>
                 <FiDownload className="text-2xl" />
               </button>
-
               <Social
                 containerStyles="flex gap-6"
                 iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"

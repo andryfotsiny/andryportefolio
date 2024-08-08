@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 const handleDownload = () => {
   // Créez un lien temporaire pour télécharger le fichier
 const link = document.createElement('a');
+
     link.href = andrycv;
   link.download = "andrycv.pdf"; // Nom du fichier lors du téléchargement
   document.body.appendChild(link);

@@ -7,7 +7,7 @@ import {BsArrowUpRight} from  "react-icons/bs"
 const services=[
     {
        num:'2024',
-       title:'certificat en Langage Python par HackerRank',
+       title:'certificat  g en Langage Python par HackerRank',
        description:"Le certificat présenté est une attestation officielle délivrée par la plateforme en ligne HackerRank. " +
            "j'ai réussi avec succès une évaluation portant sur les bases du langage de programmation Python." +
            "Cette évaluation a été validée le 14 juillet 2024.Le certificat est signé par Harishankaran K, le Directeur Technique (CTO) de HackerRank." ,

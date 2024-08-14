@@ -13,7 +13,7 @@ const handleDownload = () => {
 const link = document.createElement('a');
 
     link.href = andrycv;
-  link.download = "andrycv.pdf"; // Nom du fichier lors du téléchargement
+  link.download = "CVandryFullstack.pdf"; // Nom du fichier lors du téléchargement
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

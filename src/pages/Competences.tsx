@@ -2,11 +2,9 @@
 
 import { Tabs } from "../components/ui/Tabs";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp, FaPython, FaJava, FaNodeJs } from "react-icons/fa";
-import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb } from "react-icons/si";
+import { SiArduino, SiBlender, SiMysql, SiPostgresql, SiMongodb, SiDocker, SiJenkins } from "react-icons/si";
 
 import { motion } from "framer-motion";
-
-
 
 const skills = {
   title: 'Compétence',
@@ -33,6 +31,8 @@ const skills = {
     { icon: <SiArduino />, name: 'Arduino', stars: 3 },
     { icon: <SiBlender />, name: 'Blender', stars: 3 },
     { icon: <SiMongodb />, name: 'MongoDB', stars: 3 },
+    { icon: <SiDocker />, name: 'Docker', stars: 4 }, // Ajouté Docker
+    { icon: <SiJenkins />, name: 'Jenkins', stars: 4 }, // Ajouté Jenkins
   ]
 };
 
@@ -54,19 +54,14 @@ const Competences: React.FC = () => {
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill) => (
-                    <li key={skill.name}> {/* Utilisation de `skill.name` comme clé unique */}
+                    <li key={skill.name}>
                       <div className="w-full h-[100px] dark:bg-gray-800 bg-white rounded-xl flex flex-col justify-center items-center group">
                         <div className="text-4xl group-hover:text-accent">
                           {skill.icon}
                         </div>
                         <p className="text-xl capitalize">{skill.name}</p>
                         <div className="flex">
-                          {Array(skill.stars).fill(null).map((_, i) => (
-                            <span key={`star-${i}`} className="text-accent">★</span>
-                          ))}
-                          {Array(10 - skill.stars).fill(null).map((_, i) => (
-                            <span key={`empty-star-${i}`} className="text-gray-400">★</span>
-                          ))}
+                          {/* Vous pouvez ajouter des éléments ici si nécessaire */}
                         </div>
                       </div>
                     </li>

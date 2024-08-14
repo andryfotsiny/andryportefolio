@@ -2,7 +2,7 @@ import { FiDownload } from "react-icons/fi";
 import Stats from "../components/ui/Stats";
 import Social from "../components/ui/Social";
 import Photo from "../components/ui/Photo";
-import andrycv from "../assets/andrycv.pdf";
+import CVandryFullstack from "../assets/CVandryFullstack.pdf";
 
 import { useState, useEffect } from "react";
 
@@ -12,7 +12,7 @@ const handleDownload = () => {
   // Créez un lien temporaire pour télécharger le fichier
 const link = document.createElement('a');
 
-    link.href = andrycv;
+    link.href = CVandryFullstack;
   link.download = "CVandryFullstack.pdf"; // Nom du fichier lors du téléchargement
   document.body.appendChild(link);
   link.click();

@@ -13,8 +13,9 @@ const skills = {
     J'ai une expertise approfondie en PHP, principalement avec Laravel et Symfony, et en Python, 
     avec des projets variés incluant des systèmes médicaux et des entrepôts de données. 
     J'ai également travaillé sur des applications Java robustes, en utilisant Spring Boot et Angular. 
-    Mes compétences en JavaScript m'ont permis de créer des applications interactives avec React et Vue.js, 
-    tandis que Node.js m'a permis de développer des serveurs performants. En C# et C++, j'ai réalisé des projets de gestion de stock 
+
+    Mes compétences en JavaScript m'ont permis de créer des applications interactives avec React et Vue.js,
+    tandis que Node.js m'a permis de développer des serveurs performants. En c++ et C# , j'ai réalisé des projets de gestion de stock 
     et des systèmes embarqués avec Arduino. Enfin, j'ai utilisé R pour des analyses statistiques et des visualisations de données.`,
   skillList: [
     { icon: <FaHtml5 />, name: 'HTML', stars: 10 },
@@ -31,8 +32,9 @@ const skills = {
     { icon: <SiArduino />, name: 'Arduino', stars: 3 },
     { icon: <SiBlender />, name: 'Blender', stars: 3 },
     { icon: <SiMongodb />, name: 'MongoDB', stars: 3 },
-    { icon: <SiDocker />, name: 'Docker', stars: 4 }, // Ajouté Docker
-    { icon: <SiJenkins />, name: 'Jenkins', stars: 4 }, // Ajouté Jenkins
+    { icon: <SiDocker />, name: 'Docker', stars: 4 },
+    { icon: <SiJenkins />, name: 'Jenkins', stars: 4 },
+
   ]
 };
 
